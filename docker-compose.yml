@@ -19,6 +19,8 @@ services:
       - '7577:7577'
     depends_on:
       - mariadb
+    volumes:
+      - '~/projects/javalee:/var/www/javalee'
   mariadb:
     image: docker.io/bitnami/mariadb:10.11
     environment:
