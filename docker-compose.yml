@@ -7,6 +7,7 @@ services:
   spring-cloud-skipper:
     image: docker.io/bitnami/spring-cloud-skipper:2
     restart: always
+    container_name: javalee
     environment:
       - SERVER_PORT=7577
       - SPRING_CLOUD_SKIPPER_SERVER_PLATFORM_LOCAL_ACCOUNTS_DEFAULT_PORTRANGE_LOW=20000
